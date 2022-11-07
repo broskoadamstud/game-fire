@@ -1,2 +1,4 @@
 
 *.jar, *.class, *.ctxt
+*.class
+*.ctxt
