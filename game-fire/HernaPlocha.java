@@ -6,10 +6,32 @@
  * @version (a version number or a date)
  */
 public class HernaPlocha {
-    /**
-     * Constructor for objects of class HernaPlocha
-     */
-    public HernaPlocha() {
-        // initialise instance variables
+    private Horenie horenie;
+    private Zem zem;
+    private Casovac casovac;
+    private Manazer manazer;
+    private Displej displej;
+    private Platno platno;
+    
+    public void start(){
+        this.displej = new Displej(40,40,10);
+        this.manazer.spravujObjekt(this);
+        this.platno.prekresli();//+---------------------------------------------------//
     }
+    
+    public HernaPlocha() {
+        this.horenie = new Horenie();
+        this.zem = new Zem();
+        this.casovac = new Casovac(this);
+        this.manazer = new Manazer();
+    }
+    
+    public void spustiHru(int pocetTikov){
+        this.manazer.spravujObjekt(this.casovac);
+        this.casovac.start(pocetTikov);
+    }
+    
+    /*public void jeCas(){
+        this.manazer.prestanSpravovatObjekt(this.casovac);
+    }*/
 }

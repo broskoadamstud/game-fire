@@ -5,11 +5,10 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ohen {
-    /**
-     * Constructor for objects of class ohen
-     */
-    public ohen() {
+public class Fire {
+    private Obrazok obrazok;
+    
+    public Fire() {
         // initialise instance variables
     }
 }
