@@ -1,15 +1,35 @@
 
-/**
- * Write a description of class casovac here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class casovac {
-    /**
-     * Constructor for objects of class casovac
-     */
-    public casovac() {
-        // initialise instance variables
+public class Casovac {
+    private int pocetTikov;
+    private int maxPocetTikov;
+    private boolean jeAktivny;
+    private HernaPlocha hernaPlocha;
+    
+    public Casovac(HernaPlocha hernaPlocha) {
+        this.pocetTikov = 0;
+        this.maxPocetTikov = 0;
+        this.jeAktivny = false;
+        this.hernaPlocha = hernaPlocha;
+    }
+    
+    public void start(int paMax){
+        this.maxPocetTikov = paMax;
+        this.jeAktivny = true;
+    }
+    
+    public void tik(){
+        if(this.jeAktivny){
+            this.pocetTikov++;
+            if(this.pocetTikov == this.maxPocetTikov){
+                this.stop();
+            }
+        }
+    }
+    
+    public void stop(){
+        this.jeAktivny = false;
+        if(this.hernaPlocha != null){
+            //this.hernaPlocha.jeCas();
+        }
     }
 }
