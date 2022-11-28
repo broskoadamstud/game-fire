@@ -11,12 +11,11 @@ public class HernaPlocha {
     private Casovac casovac;
     private Manazer manazer;
     private Displej displej;
-    private Platno platno;
     
     public void start(){
         this.displej = new Displej(40,40,10);
         this.manazer.spravujObjekt(this);
-        this.platno.prekresli();//+---------------------------------------------------//
+        Platno.dajPlatno().prekresli();//+---------------------------------------------------//
     }
     
     public HernaPlocha() {
