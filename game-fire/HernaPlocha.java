@@ -11,12 +11,18 @@ public class HernaPlocha {
     private Manazer manazer;
     private Displej displej;
     
+    /**
+     * Metoda start() spusti hru a nastavi stvorec s stranou dlhou 10 a generovanie 40 stvorcou do riadku/stlpca
+     */
     public void start(){
         this.displej = new Displej(40,40,10);
         this.manazer.spravujObjekt(this);
         Platno.dajPlatno().prekresli();
     }
     
+    /**
+     * Inicializacia Horenia,Zeme,Casocava,Manazera
+     */
     public HernaPlocha() {
         this.horenie = new Horenie();
         this.zem = new Zem();
@@ -24,6 +30,9 @@ public class HernaPlocha {
         this.manazer = new Manazer();
     }
     
+    /**
+     * Spustenie hry
+     */
     public void spustiHru(int pocetTikov){
         this.manazer.spravujObjekt(this.casovac);
         this.casovac.start(pocetTikov);

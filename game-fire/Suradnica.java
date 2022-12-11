@@ -7,15 +7,25 @@ public class Suradnica {
     private int x;
     private int y;
     
+    /**
+     * @param  x nastavenie suradnice x
+     * @param  y nastavenie suradnice y
+     */
     public Suradnica(int x, int y) {
         this.x = x;
         this.y = y;
     }
     
+    /**
+     * vrat suradnicu x
+     */
     public int getX(){
         return this.x;
     }
     
+    /**
+     * vrat suradnicu y
+     */
     public int getY(){
         return this.y;
     }

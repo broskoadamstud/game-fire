@@ -9,6 +9,12 @@ public class Casovac {
     private boolean jeAktivny;
     private HernaPlocha hernaPlocha;
     
+    /**
+     * @param pocetTikov nastavenie krokov casovaca
+     * @param maxpocetTikov nastavenie maximalneho pocetu krokov casovaca
+     * @param jeAktivny zistovanie aktivity 
+     * @param hernaPlocha inicializacia hernej plochy
+     */
     public Casovac(HernaPlocha hernaPlocha) {
         this.pocetTikov = 0;
         this.maxPocetTikov = 0;
@@ -16,11 +22,17 @@ public class Casovac {
         this.hernaPlocha = hernaPlocha;
     }
     
+    /**
+     * start hry
+     */
     public void start(int paMax){
         this.maxPocetTikov = paMax;
         this.jeAktivny = true;
     }
     
+    /**
+     * tikanie casovaca
+     */
     public void tik(){
         if(this.jeAktivny){
             this.pocetTikov++;
@@ -30,6 +42,9 @@ public class Casovac {
         }
     }
     
+    /**
+     * zastavenie hry
+     */
     public void stop(){
         this.jeAktivny = false;
     }
