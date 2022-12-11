@@ -1,4 +1,8 @@
-
+/**
+ *  
+ * @author (Sami Tebbaa, Adam Broško) 
+ * @version 1.0 (9.12.2022)
+ */
 public class Casovac {
     private int pocetTikov;
     private int maxPocetTikov;
@@ -28,8 +32,5 @@ public class Casovac {
     
     public void stop(){
         this.jeAktivny = false;
-        if(this.hernaPlocha != null){
-            //this.hernaPlocha.jeCas();
-        }
     }
 }

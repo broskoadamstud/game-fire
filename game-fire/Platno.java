@@ -42,9 +42,6 @@ public class Platno {
         Platno.platnoSingleton.setVisible(true);
         return Platno.platnoSingleton;
     }
-
-    //  ----- instance part -----
-
     private final JFrame frame;
     private final CanvasPane canvas;
     private Graphics2D graphic;
@@ -158,8 +155,6 @@ public class Platno {
      */
     private void setVisible(boolean visible) {
         if (this.graphic == null) {
-            // first time: instantiate the offscreen image and fill it with
-            // the background colour
             Dimension size = this.canvas.getSize();
             this.canvasImage = this.canvas.createImage(size.width, size.height);
             this.graphic = (Graphics2D)this.canvasImage.getGraphics();

@@ -1,5 +1,9 @@
+/**
+ *  
+ * @author (Sami Tebbaa, Adam Broško) 
+ * @version 1.0 (9.12.2022)
+ */
 public class PolickoDispleja {
-    
     private Stvorec stvorec;
     
     public PolickoDispleja(int x, int y, int sirka) {
@@ -10,19 +14,5 @@ public class PolickoDispleja {
         this.stvorec.zmenFarbu("green");
         this.stvorec.zobraz();
     }
-    
-    /*public void zobrazZasahLode() {
-        this.kruh.zmenFarbu("red");
-        this.kruh.zobraz();
-    }*/
-    
-    /*public void zobrazZasahVody() {
-        this.stvorec.zmenFarbu("green");
-        this.stvorec.zobraz();
-    }*/
-    
-    /*public void reset() {
-        this.kruh.skry();
-        this.stvorec.zmenFarbu("blue");
-    }*/
+        
 }

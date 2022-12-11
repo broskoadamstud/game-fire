@@ -1,4 +1,8 @@
-
+/**
+ *  
+ * @author (Sami Tebbaa, Adam Broško) 
+ * @version 1.0 (9.12.2022)
+ */
 public class Displej {
     private PolickoDispleja[][] poleDisplejPolicok;
     private int sirkaPolicka;
@@ -22,18 +26,7 @@ public class Displej {
     }
     
     public void zobrazZasah(boolean zasahLode, int x, int y){
-        /*if(zasahLode){
-            this.poleDisplejPolicok[x][y].zobrazZasahLode();
-        }else{
-            this.poleDisplejPolicok[x][y].zobrazZasahVody();
-        }*/
+        
     }
-    
-    /*public void resetujDisplej(){
-        for(int i = 0; i < this.poleDisplejPolicok.length; i++){
-            for(int j = 0; j < this.poleDisplejPolicok[i].length; j++){
-                this.poleDisplejPolicok[i][j].reset();
-            }
-        }
-    }*/
+            
 }
