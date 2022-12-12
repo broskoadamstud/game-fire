@@ -34,10 +34,10 @@ public class Manazer {
         this.spravovaneObjekty = new ArrayList<Object>();
         this.stlaceniaKlaves = new ArrayListSet<KeyEvent>();
         this.kliknutie = null;
-        Platno.dajPlatno().addKeyListener(new ManazerKlaves());        
-        Platno.dajPlatno().addMouseListener(new ManazerMysi());
         this.casovac = new Timer(fpsToTimerDelay(25), new ManazerCasovaca());
         this.casovac.start();
+        Platno.dajPlatno().addKeyListener(new ManazerKlaves());        
+        Platno.dajPlatno().addMouseListener(new ManazerMysi());
     }
     
     /**
@@ -144,7 +144,6 @@ public class Manazer {
     }
 
     private static class ArrayListSet<T> implements Iterable<T> {
-
         private final ArrayList<T> list;
     
         ArrayListSet() {

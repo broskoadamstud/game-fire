@@ -1,14 +1,12 @@
-
 /**
- * Write a description of class ohen here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ *  
+ * @author (Sami Tebbaa, Adam Broško) 
+ * @version 1.0 (9.12.2022)
  */
 public class Fire {
     private Obrazok obrazok;
     
     public Fire() {
-        // initialise instance variables
+        
     }
 }

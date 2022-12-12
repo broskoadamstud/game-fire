@@ -1,7 +1,19 @@
+/**
+ *  
+ * @author (Sami Tebbaa, Adam Broško) 
+ * @version 1.0 (9.12.2022)
+ */
 public class PolickoDispleja {
-    
     private Stvorec stvorec;
     
+    /**
+     * Inicializacia stvorca 
+     * Stvorec.zmenStranu zmena strany stvorca
+     * stvorec.posunVodorovne posunutie stvorca vodorovne
+     * stvorec.posunZvisle posunutie stvorca zvisle
+     * stvorec.zmenFarbu zmena farby stvorca
+     * stvorec.zobraz zobrazenie stvorca
+     */
     public PolickoDispleja(int x, int y, int sirka) {
         this.stvorec = new Stvorec();
         this.stvorec.zmenStranu(sirka - 1);
@@ -10,19 +22,5 @@ public class PolickoDispleja {
         this.stvorec.zmenFarbu("green");
         this.stvorec.zobraz();
     }
-    
-    /*public void zobrazZasahLode() {
-        this.kruh.zmenFarbu("red");
-        this.kruh.zobraz();
-    }*/
-    
-    /*public void zobrazZasahVody() {
-        this.stvorec.zmenFarbu("green");
-        this.stvorec.zobraz();
-    }*/
-    
-    /*public void reset() {
-        this.kruh.skry();
-        this.stvorec.zmenFarbu("blue");
-    }*/
+        
 }

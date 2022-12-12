@@ -1,8 +1,16 @@
-
+/**
+ *  
+ * @author (Sami Tebbaa, Adam Broško) 
+ * @version 1.0 (9.12.2022)
+ */
 public class Displej {
     private PolickoDispleja[][] poleDisplejPolicok;
     private int sirkaPolicka;
     
+    /**
+     * @param sirkaPolicka nastavenie sirky policka
+     * @param poleDisplejPolicok velkost pola
+     */
     public Displej(int vyska, int sirka, int sirkaPolicka) {
         this.sirkaPolicka = sirkaPolicka;
         this.poleDisplejPolicok = new PolickoDispleja[vyska][sirka];
@@ -13,6 +21,9 @@ public class Displej {
         }
     }
     
+    /**
+     * Nastavenie suradnic
+     */
     public Suradnica transformujSuradnice(int x, int y){
         if((x < 0) || (y < 0) || (x > this.sirkaPolicka * this.poleDisplejPolicok.length) || (y > this.sirkaPolicka * this.poleDisplejPolicok.length)){
             return null;
@@ -21,19 +32,4 @@ public class Displej {
         }
     }
     
-    public void zobrazZasah(boolean zasahLode, int x, int y){
-        /*if(zasahLode){
-            this.poleDisplejPolicok[x][y].zobrazZasahLode();
-        }else{
-            this.poleDisplejPolicok[x][y].zobrazZasahVody();
-        }*/
-    }
-    
-    /*public void resetujDisplej(){
-        for(int i = 0; i < this.poleDisplejPolicok.length; i++){
-            for(int j = 0; j < this.poleDisplejPolicok[i].length; j++){
-                this.poleDisplejPolicok[i][j].reset();
-            }
-        }
-    }*/
 }
